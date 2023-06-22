@@ -8,6 +8,8 @@
  * Return: 0 on success
  */
 
+bus_t bus;
+
 int main(int argc, char *argv[])
 {
 	FILE *file;
