@@ -8,27 +8,15 @@
  *
  * Return: no return
  */
-
 int execute(char *content, stack_t **stack, unsigned int l_counter, FILE *file)
 {
-	instruction_t opst[] = 
-	{
+	instruction_t opst[] = {
 		{"push", push_f}, {"pall", pall_f}, {"pint", pint_f},
-		{"pop", pop_f},
-		{"swap", swap_f},
-		{"add", add_f},
-		{"nop", nop_f},
-		{"sub", sub_f},
-		{"div", div_f},
-		{"mul", mul_f},
-		{"mod", mod_f},
-		{"pchar", pchar_f},
-		{"pstr", pstr_f},
-		{"rotl", rotl_f},
-		{"rotr", rotr_f},
-		{"queue", queue_f},
-		{"stack", stack_f},
-		{NULL, NULL}
+		{"pop", pop_f},	{"swap", swap_f}, {"add", add_f},
+		{"nop", nop_f},	{"sub", sub_f},	{"div", div_f},
+		{"mul", mul_f},	{"mod", mod_f},	{"pchar", pchar_f},
+		{"pstr", pstr_f}, {"rotl", rotl_f}, {"rotr", rotr_f},
+		{"queue", queue_f}, {"stack", stack_f}, {NULL, NULL}
 	};
 	unsigned int t = 0;
 	char *op;

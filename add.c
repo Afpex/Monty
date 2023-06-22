@@ -6,6 +6,8 @@
  * @l_counter: number of a line
  * Return: no return
  */
+bus_t bus;
+
 void add_f(stack_t **head, unsigned int l_counter)
 {
 	stack_t *h;

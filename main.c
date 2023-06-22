@@ -8,13 +8,11 @@
  * Return: 0 on success
  */
 
-bus_t bus;
-
 int main(int argc, char *argv[])
 {
 	FILE *file;
 	size_t size = MAX_LINE_LENGTH;
-	char *content = (char*)malloc(size * sizeof(char));
+	char *content = (char *)malloc(size * sizeof(char));
 	ssize_t read_line = 1;
 	stack_t *stack = NULL;
 	unsigned int l_counter = 0;
