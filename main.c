@@ -1,6 +1,5 @@
 #include "monty.h"
 #define MAX_LINE_LENGTH 1024
-
 /**
  * main - monty code interpreter
  * @argc: number of arguments
@@ -29,10 +28,9 @@ int main(int argc, char *argv[])
 		fprintf(stderr, "Error: Can't open file %s\n", argv[1]);
 		exit(EXIT_FAILURE);
 	}
-	content = (char *)malloc(size * sizeof(char)); 
+	content = (char *)malloc(size * sizeof(char));
 	while (read_line > 0)
 	{
-/*		content = (char *)malloc(size * sizeof(char)); */
 		if (fgets(content, size, file) == NULL)
 		{
 			break;
@@ -44,11 +42,9 @@ int main(int argc, char *argv[])
 		{
 			execute(content, &stack, l_counter, file);
 		}
-/*		free(content); */
 	}
-	free(content); 
+	free(content);
 	fclose(file);
-
 	free_stack(stack);
 	return (0);
 }
