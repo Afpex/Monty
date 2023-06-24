@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 	}
 	while (read_line > 0)
 	{
-		content = NULL;
+		content = (char *)malloc(size * sizeof(char));
 		if (fgets(content, size, file) == NULL)
 		{
 			break;
